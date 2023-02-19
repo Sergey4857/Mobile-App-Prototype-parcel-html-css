@@ -1,0 +1,123 @@
+
+
+$main-text-color:#000000;
+$secondary-text-color:#FFFFFF;
+$gradient-color:linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+$dark-bcg:#06071B;
+$light-bcg:#FFFFFF;
+
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $light-bcg;
+  color: $main-text-color;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+ 
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.no-scroll{
+overflow: hidden;
+}
+.is-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+
+}
+
+.container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px)  {
+    position: relative;
+  }
+
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1248px;
+  }
+}
+
+.section {
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
