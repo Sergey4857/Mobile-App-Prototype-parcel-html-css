@@ -10,11 +10,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./sass/main.scss">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link rel="stylesheet" href="./sass/main.scss">
+
 <body>
   <div class="hero-box ">
-    <header class="header">
+    <header class="header" id="up">
       <div class="header-content container">
         <a href="./index.html" class="header-logo">Mobileapp</a>
 
@@ -39,7 +48,7 @@
             <a href="./index.html" class="header-logo-modal">Mobileapp</a>
             <ul class="header-list" header-list>
               <li class="header-item"><a href="#HOME" class="header-link">HOME</a></li>
-              <li class="header-item"><a href="#FEATURES" class="header-link">FEATURES</a></li>
+              <li class="header-item"><a href="#features" class="header-link">FEATURES</a></li>
               <li class="header-item"><a href="#TEAM" class="header-link">TEAM</a></li>
               <li class="header-item"><a href="#TESTIMONIALS" class="header-link">TESTIMONIALS</a></li>
               <li class="header-item"><a href="#CONTACT" class="header-link">CONTACT</a></li>
@@ -50,7 +59,7 @@
     </header>
     <section class="hero" id="HOME">
       <div class="hero-content container ">
-        <h1 class="hero-title " >Introducing Mobileapp</h1>
+        <h1 class="hero-title ">Introducing Mobileapp</h1>
         <p class="hero-text">Maecenas vitae tellus sapien. Prasent</p>
         <ul class="hero-list">
           <li class="hero-item">semper scelerisque tristique a enim</li>
@@ -66,7 +75,7 @@
     </section>
   </div>
 
-  <section class="features section" id="FEATURES">
+  <section class="features section" id="features">
     <div class="container">
       <h2 class="features-title">KEY FEATURES</h2>
       <p class="features-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit
@@ -199,7 +208,8 @@
             <source srcset="./images/mobile/4-team/team1-1x.jpg 1x, 
                     ./images/mobile/4-team/team1-2x.jpg 2x" media="(max-width: 767px)">
             <source srcset="./images/tablet/4-team/team-1-1x.jpg 1x,
-                            ./images/tablet/4-team/team-1-2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)">
+                            ./images/tablet/4-team/team-1-2x.jpg 2x"
+              media="(min-width: 768px) and (max-width: 1279px)">
             <source srcset="./images/desktop/4-team/team-1-1x.jpg 1x,
                             ./images/desktop/4-team/team-1-2x.jpg 2x" media="(min-width: 1280px)">
 
@@ -222,7 +232,8 @@
             <source srcset="./images/mobile/4-team/team2-1x.jpg 1x, 
                             ./images/mobile/4-team/team2-2x.jpg 2x" media="(max-width: 767px)">
             <source srcset="./images/tablet/4-team/team-2-1x.jpg 1x,
-                            ./images/tablet/4-team/team-2-2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)">
+                            ./images/tablet/4-team/team-2-2x.jpg 2x"
+              media="(min-width: 768px) and (max-width: 1279px)">
             <source srcset="./images/desktop/4-team/team-2-1x.jpg 1x,
                             ./images/desktop/4-team/team-2-2x.jpg 2x" media="(min-width: 1280px)">
 
@@ -290,22 +301,110 @@
       </ul>
     </div>
 
+
   </section>
   <section class="customers" id="TESTIMONIALS">
     <div class="container">
       <h2 class="customers-title">WHAT OUR
         COSTUMER’S SAY</h2>
-      <img class="customers-img" src="./images/desktop/5-costumers/costumers-1-1x.png" alt="" width="181" height="181">
-      <p class="customers-name">Jon Doe</p>
-      <p class="customers-desc">Company Inc.</p>
-      <p class="customers-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero
-        nec sapien condimentum
-        dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique
-        eros
-        quis
-        nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean
-        gravida
-        massa et ante pulvinar, id</p>
+
+      <div class="one-time">
+        <div><img class="customers-img" src="./images/desktop/5-costumers/costumers-1-1x.png" alt="" width="181"
+            height="181">
+          <p class="customers-name">Jon Doe</p>
+          <p class="customers-desc">Company Inc.</p>
+          <p class="customers-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper
+            libero
+            nec sapien condimentum
+            dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique
+            eros
+            quis
+            nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus.
+            Aenean
+            gravida
+            massa et ante pulvinar, id</p>
+        </div>
+
+        <div><img class="customers-img" src="./images/desktop/5-costumers/costumers-1-1x.png" alt="" width="181"
+            height="181">
+          <p class="customers-name">Jon Doe</p>
+          <p class="customers-desc">Company Inc.</p>
+          <p class="customers-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper
+            libero
+            nec sapien condimentum
+            dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique
+            eros
+            quis
+            nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus.
+            Aenean
+            gravida
+            massa et ante pulvinar, id</p>
+        </div>
+        <div><img class="customers-img" src="./images/desktop/5-costumers/costumers-1-1x.png" alt="" width="181"
+            height="181">
+          <p class="customers-name">Jon Doe</p>
+          <p class="customers-desc">Company Inc.</p>
+          <p class="customers-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper
+            libero
+            nec sapien condimentum
+            dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique
+            eros
+            quis
+            nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus.
+            Aenean
+            gravida
+            massa et ante pulvinar, id</p>
+        </div>
+        <div><img class="customers-img" src="./images/desktop/5-costumers/costumers-1-1x.png" alt="" width="181"
+            height="181">
+          <p class="customers-name">Jon Doe</p>
+          <p class="customers-desc">Company Inc.</p>
+          <p class="customers-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper
+            libero
+            nec sapien condimentum
+            dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique
+            eros
+            quis
+            nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus.
+            Aenean
+            gravida
+            massa et ante pulvinar, id</p>
+        </div>
+        <div><img class="customers-img" src="./images/desktop/5-costumers/costumers-1-1x.png" alt="" width="181"
+            height="181">
+          <p class="customers-name">Jon Doe</p>
+          <p class="customers-desc">Company Inc.</p>
+          <p class="customers-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper
+            libero
+            nec sapien condimentum
+            dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique
+            eros
+            quis
+            nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus.
+            Aenean
+            gravida
+            massa et ante pulvinar, id</p>
+        </div>
+        <div><img class="customers-img" src="./images/desktop/5-costumers/costumers-1-1x.png" alt="" width="181"
+            height="181">
+          <p class="customers-name">Jon Doe</p>
+          <p class="customers-desc">Company Inc.</p>
+          <p class="customers-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper
+            libero
+            nec sapien condimentum
+            dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique
+            eros
+            quis
+            nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus.
+            Aenean
+            gravida
+            massa et ante pulvinar, id</p>
+        </div>
+
+      </div>
+
+
+
     </div>
   </section>
 
@@ -480,6 +579,15 @@
     </div>
   </div>
 
+  <div class="up-button" id="up-button">
+    <a class="up-button__link" href="#up">
+      <svg class="up-button__icon animate__animated animate__slideOutUp animate__slower animate__infinite" width="25"
+        height="37">
+        <use href="./sprite.svg#icon-up"></use>
+      </svg>
+    </a>
+  </div>
+
 
 
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -488,6 +596,10 @@
   <script src="./js/mobile-menu.js"></script>
   <script type="module" src="./js/anchor-scroll.js"></script>
   <script src="./js/modal.js"></script>
+  <!-- Slick JS -->
+  <script src="./js/slick.js"></script>
+
+  <script src="./js/features-scroll.js"></script>
 
 </body>
 

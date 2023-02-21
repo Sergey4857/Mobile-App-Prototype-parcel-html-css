@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -1094,8 +1095,7 @@ address {
 @media screen and (max-width: 767px) {
   .customers {
     padding-top: 40px;
-    padding-bottom: 86px;
-    padding-bottom: 126px;
+    padding-bottom: 87px;
     background-image: url(../images/mobile/5-costumers/gradient.png);
     background-size: cover;
     background-position: 50% 50%;
@@ -1104,7 +1104,7 @@ address {
 @media screen and (min-width: 768px) {
   .customers {
     padding-top: 80px;
-    padding-bottom: 106px;
+    padding-bottom: 130px;
     background-image: url(../images/desktop/5-costumers/gradient.png);
     background-size: cover;
     background-position: 10% 15%;
@@ -1112,7 +1112,7 @@ address {
 }
 @media screen and (min-width: 1280px) {
   .customers {
-    padding-bottom: 126px;
+    padding-bottom: 150px;
     background-image: url(../images/desktop/5-costumers/gradient.png);
     background-size: cover;
     background-position: 10% 15%;
@@ -1190,6 +1190,47 @@ address {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .slick-dots {
+    bottom: -50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slick-dots {
+    bottom: -64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slick-dots {
+    bottom: -64px;
+  }
+}
+
+.slick-dots li {
+  margin: 0 0px; /* изменение расстояния */
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dotted.slick-slider {
+  margin: 0;
 }
 
 .contact {
@@ -1978,4 +2019,42 @@ address {
     max-width: 232px;
     height: 42px;
   }
+}
+@media screen and (max-width: 767px) {
+  .up-button {
+    display: none;
+  }
+}
+
+.up-button-active {
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+}
+
+.up-button__link {
+  position: relative;
+  top: -30px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  width: 45px;
+  height: 80px;
+  fill: #7044ff;
+}
+.up-button__link:hover, .up-button__link:focus {
+  scale: 1.2;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  stroke: #000;
+  stroke-width: 1px;
+  fill: #ffffff;
+  box-shadow: 2px 0 15px #0008ff;
+}
+
+.up-button__icon {
+  position: relative;
+  top: 20px;
+  left: 0;
 }/*# sourceMappingURL=main.css.map */
