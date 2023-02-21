@@ -1,0 +1,2 @@
+window.onscroll=function(){window.screen.width>=768?scrollY<=700?document.getElementById("up-button").classList.remove("up-button-active"):document.getElementById("up-button").classList.add("up-button-active"):scrollY<=700?document.getElementById("up-button").classList.remove("up-button-active"):document.getElementById("up-button").classList.add("features-scroll")};
+//# sourceMappingURL=index.349e57a1.js.map
